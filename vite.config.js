@@ -3,7 +3,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://13.124.245.13:8080/',  // ✅ 새 서버 IP
+        target: 'https://minsaengcheck.syu-likelion.org',  // ✅ 새 서버 IP
         changeOrigin: true,
         secure: false,
       },
