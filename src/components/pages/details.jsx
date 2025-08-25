@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../axios";
 import "./details.css";
 
 export default function Details() {
@@ -13,7 +13,7 @@ export default function Details() {
   useEffect(() => {
     const fetchStore = async () => {
       try {
-       const res = await axios.get(`/api/posts/${id}`);
+       const res = await api.get(`/posts/${id}`);
 
 
         setStore(res.data);
