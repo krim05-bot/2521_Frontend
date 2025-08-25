@@ -1,0 +1,288 @@
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
+  background: #fafafa;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #222;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #38DBF8;
+  margin-right: 20px;
+  font-family: 'Pretendard-Bold';
+}
+
+.logo span {
+  color: #2563EB;
+  font-family: 'Pretendard-Bold';
+  font-size: 32px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #2563EB;
+  border-radius: 50px;
+  padding: 6px 12px;
+  margin-right: auto;
+  margin-left: 50px;
+  width: 436px;
+  height: 40px;
+  background-color: #F0F0F0;
+  font-family: 'Pretendard-Medium';
+  font-size: 16px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 350px;
+  font-size: 16px;
+  background: transparent;
+  margin-left: 10px;
+}
+
+.header .nav {
+  display: flex;
+  gap: 18px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 18px;
+  margin-left: auto; /* ← 고정 px 대신 auto 쓰는 게 더 안정적 */
+}
+
+.app_menu_item {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.app_menu_item:hover {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.write_title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 12px auto;
+  font-family: 'Pretendard-Medium';
+}
+
+
+.form-container {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 4px solid #F0F0F0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F8FA;
+  
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 12px;
+    max-width: 100%;  /* 태블릿 이하에서는 양옆 여백 없이 꽉 차게 */
+    border-width: 2px;
+  }
+
+  .input-text, .textarea {
+    width: 100%;      /* 작은 화면에서 자동으로 줄어듦 */
+    margin-left: 0;
+  }
+}
+
+
+.form-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  padding-bottom: 80px; 
+  box-sizing: border-box;
+  
+  
+}
+
+
+.input-text {
+  width: 441px;
+  height: 30px;
+  padding: 12px;
+  padding-left: 20px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Pretendard-Medium';
+  color: #A1A6A9;
+  font-size: 18px;
+
+  display: flex;
+  background-color: #F0F0F0;
+  justify-content: center;
+  
+}
+
+
+.section {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+}
+
+
+.category {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+  color: #A1A6A9;
+}
+
+
+.textarea {
+  width: 100%;
+  width: 1050px;
+  min-height: 120px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-size: 14px;
+  resize: vertical;
+  margin-left: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+  color: #A1A6A9;
+}
+
+
+.file-upload {
+  display: flex;
+  align-items: left;
+  gap: 8px;
+  background: #DCEAFE;
+  border: 1px #DCEAFE;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  font-size: 14px;  
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+
+}
+
+
+.submit-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 22px;
+  background-color: #F0F0F0;
+  border: 3px solid #E0E0E0;
+  border-radius: 16px;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.submit-btn:hover {
+  background: #e6e6e6;
+}
+
+
+.category input[type="radio"] {
+  appearance: none;           
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ccc;     
+  border-radius: 50%;          
+  background-color: #fff;      
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+    /* 추가 */
+  vertical-align: middle; 
+
+}
+
+
+.category input[type="radio"]:checked {
+  background-color: #38DBF8;  
+  border-color: #F6F8FA;      
+  border-width: 5px;           
+}
+
+
+.preview{
+  margin-left: 50px;
+}
+
+
+/* textarea 스크롤바 색 못 바꾸겠다 */

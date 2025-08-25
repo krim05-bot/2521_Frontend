@@ -1,0 +1,268 @@
+
+
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
+  background: #fafafa;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #222;
+  background-color: #ffffff;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #38DBF8;
+  margin-left: 30px;
+  font-family: 'Pretendard-Bold';
+}
+
+.logo span {
+  color: #2563EB;
+  font-family: 'Pretendard-Bold';
+  font-size: 32px;
+}
+
+
+
+.header .nav {
+  display: flex;
+  gap: 18px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 18px;
+  margin-left: auto; /* ← 고정 px 대신 auto 쓰는 게 더 안정적 */
+}
+
+
+.app_menu_item {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.app_menu_item:hover {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.label
+
+
+.form-container {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  width: 1128px;
+  height: 636px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 4px solid #E0E0E0;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F8FA;
+  
+}
+
+.input-text {
+  width: 441px;
+  height: 30px;
+  padding: 12px;
+  padding-left: 20px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Pretendard-Medium';
+  color: #A1A6A9;
+  font-size: 18px;
+
+  display: flex;
+  background-color: #F0F0F0;
+  justify-content: center;
+  
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.explain{
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.label_image {
+  display: block;
+  margin-left: 80px;
+  margin-top: 30px;
+  font-family: 'Pretendard-Bold';
+  font-size: 96px;
+  font-weight: bold;
+  text-align: center;        
+  line-height: 197px;        
+  background-color: #2563EB;
+  border-radius: 15px;
+  width: 970px;
+  height: 197px;
+  color: #ffffff;
+}
+
+.label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #274FA8;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+  line-height: 2; 
+}
+
+.label span{
+  color: #1E1E1E;
+}
+
+.category {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Pretendard-Medium';
+  color: #A1A6A9;
+}
+
+.description {
+  /* 기존 스타일 유지 */
+  width: 666px;
+  height: 153px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #F0F0F0;
+  font-size: 16px;
+  resize: vertical;
+  margin-left: 45px;
+  margin-top: 8px;
+  font-family: 'Pretendard-Medium';
+  color: black;
+  overflow-y: scroll;
+
+  /* Firefox 스크롤바 색 */
+  scrollbar-width: thin;
+  scrollbar-color: #ABDDED #e0e0e0; /* thumb 색, track 색 */
+}
+
+.description::-webkit-scrollbar {
+  width: 20px;  /* 기본 12px에서 20px로 키움 */
+}
+
+.description::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ABDDED;
+  border: 4px solid #e0e0e0; /* 테두리도 같이 조금 키우면 좋음 */
+}
+
+.description::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 20px;
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+}
+
+
+.heart-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #5685ED;
+  border-radius: 15px;
+  font-size: 40px;   /* 하트 크기 */
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  color: white;
+
+  display: flex;               /* 중앙 정렬 핵심 */
+  align-items: center;         /* 세로 중앙 */
+  justify-content: center;     /* 가로 중앙 */
+}
+
+
+.heart-btn:hover {
+  background-color: #2563EB;
+}
+
+
+.category input[type="radio"] {
+  appearance: none;           
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ccc;     
+  border-radius: 50%;          
+  background-color: #fff;      
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+    /* 추가 */
+  vertical-align: middle; 
+
+}
+
+
+.category input[type="radio"]:checked {
+  background-color: #38DBF8;  
+  border-color: #F6F8FA;      
+  border-width: 5px;           
+}
+
+
+.preview{
+  margin-left: 50px;
+}
+
+
+
