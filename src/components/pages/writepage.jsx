@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../api/axios"; 
 import "./writepage.css";
 
 export default function App() {
@@ -28,9 +28,9 @@ const handleSubmit = async () => {
       formData.append("image", selectedFile);
     }
 
-const res = await axios.post("/api/posts", formData, {
-  headers: { "Content-Type": "multipart/form-data" },
-});
+ const res = await api.post("/posts", formData, {
+   headers: { "Content-Type": "multipart/form-data" },
+ });
 
 
     alert("작성 성공!");
