@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import api from "../axios";
+import api from "../api/axios";
 import "./details.css";
 
 export default function Details() {
