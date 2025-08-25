@@ -14,7 +14,7 @@ html, body, #root {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
+
   background: #fafafa;
 }
 
@@ -46,12 +46,12 @@ html, body, #root {
   font-weight: 700;
   color: #38DBF8;
   margin-left: 30px;
-  font-family: 'Pretendard-Bold';
+
 }
 
 .logo span {
   color: #2563EB;
-  font-family: 'Pretendard-Bold';
+
   font-size: 32px;
 }
 
@@ -60,7 +60,7 @@ html, body, #root {
 .header .nav {
   display: flex;
   gap: 18px;
-  font-family: 'Pretendard-SemiBold';
+
   font-size: 18px;
   margin-left: auto; /* ← 고정 px 대신 auto 쓰는 게 더 안정적 */
 }
@@ -108,7 +108,7 @@ html, body, #root {
   margin-bottom: 20px;
   border: none;
   border-radius: 12px;
-  font-family: 'Pretendard-Medium';
+
   color: #A1A6A9;
   font-size: 18px;
 
@@ -133,7 +133,7 @@ html, body, #root {
   display: block;
   margin-left: 80px;
   margin-top: 30px;
-  font-family: 'Pretendard-Bold';
+ 
   font-size: 96px;
   font-weight: bold;
   text-align: center;        
@@ -153,7 +153,7 @@ html, body, #root {
   color: #274FA8;
   margin-left: 50px;
   font-size: 20px;
-  font-family: 'Pretendard-Medium';
+
   line-height: 2; 
 }
 
@@ -168,7 +168,7 @@ html, body, #root {
   margin-bottom: 5px;
   margin-left: 50px;
   font-size: 20px;
-  font-family: 'Pretendard-Medium';
+ 
   color: #A1A6A9;
 }
 
@@ -184,7 +184,7 @@ html, body, #root {
   resize: vertical;
   margin-left: 45px;
   margin-top: 8px;
-  font-family: 'Pretendard-Medium';
+
   color: black;
   overflow-y: scroll;
 
