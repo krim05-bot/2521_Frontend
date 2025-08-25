@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
 
         {/* 상세페이지 */}
-        <Route path="/details/:id" element={<Details />} />
+        <Route path="/posts/:id" element={<Details />} />
 
         {/* 작성 페이지 */}
         <Route path="/write" element={<WritePage />} />
